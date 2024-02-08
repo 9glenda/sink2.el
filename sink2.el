@@ -6,8 +6,8 @@
 
 (require 'subr-x)
 
-(defvar sink-use-frames t
-  "set to nil to open new buffers in windows rather than frames.
+(defvar sink-use-frames nil
+  "set to t to open new buffers in frames rather than windows.
 Used in the default edit handler")
 (defvar sink--tracked-ports '()
   "list of processes sink-mode is currently tracking")
