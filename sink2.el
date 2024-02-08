@@ -91,7 +91,7 @@ passes it to func"
   "return a new 9p process from the given port pair
 ppair is name . function"
   (make-process :name (concat "9p " (car ppair)) :buffer 'nil
-                :command (list "9p" "read"
+                :command (list "9" "9p" "read"
                                (concat "plumb/" (car ppair)))
                 :connection-type 'pipe
                 :filter (sink--make-filter (cdr ppair))))
