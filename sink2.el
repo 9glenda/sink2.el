@@ -101,7 +101,7 @@ ppair is name . function"
 When sink-mode is active Emacs will listen
 and respond to messages from the plan9 plumber"
   :init-value nil
-  :lighter "sink2"
+  :lighter " ╚╦"
   :keymap nil
   :global t
   (if sink-mode
